@@ -19,6 +19,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{tikz}
+% \usepackage{changes}
 % \usepackage{bibentry}
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
@@ -229,8 +230,8 @@ use item list as is shown in the work experience section.
 \end{comment}
 \section{Research Interest}
   \CVItemListStart
-    \CVItem{Radiation detection in security and medical applications}
-    \CVItem{Development of readout electronics and data processing algorithms}
+    \CVItem{{Development of non-destructive assay methods of special material for the characterization of tri-structural isotropic particle (TRISO) fuel for pebble bed reactors and use of advanced techniques, such as positron lifetime spectroscopy, and development of single-volume scatter camera with SiPM scintillator readout}}
+    \CVItem{Radiation detector signal processing algorithms with a focus on accelerated Monte Carlo implementation and iterative linear inverse solver for image reconstruction.}
   \CVItemListEnd
 \section{Research Experience}
   \CVSubHeadingListStart
@@ -270,12 +271,12 @@ use item list as is shown in the work experience section.
         \CVItem{Implemented a shift-register algorithm to calculate the coincidence neutron count rate.}
         \CVItem{Demonstrated the possibility of using a DD generator as a neutron active interrogation source based on the strong correlation between the time-dependent neutron count rate signature and uranium mass.}
       \CVItemListEnd
-    \CVSubheading
-      {Fellow of Exotic Beam Summer School}{Jun 2019}
-      {Oak Ridge National Laboratory}{Oak Ridge, USA}
-      \CVItemListStart
-        \CVItem{Learnt about the various facets of the science of exotic nuclei including nuclear structure, fundamental interactions, and the application of nuclear science and technology.}
-      \CVItemListEnd
+    % \CVSubheading
+    %   {Fellow of Exotic Beam Summer School}{Jun 2019}
+    %   {Oak Ridge National Laboratory}{Oak Ridge, USA}
+    %   \CVItemListStart
+    %     \CVItem{Learnt about the various facets of the science of exotic nuclei including nuclear structure, fundamental interactions, and the application of nuclear science and technology.}
+    %   \CVItemListEnd
     \CVSubheading
       {Positron Annihilation Lifetime Spectroscopy (PALS)}{Jan 2019 – May 2019}
       {UIUC}{Urbana, USA}
@@ -301,19 +302,19 @@ use item list as is shown in the work experience section.
 %-----PUBLICATIONS-------------------------------------------------------------
 \section{Publications}
 
-\hspace{1.5em}\textbf{Journal}
+\hspace{1.5em}\textbf{Peer-Reviewed Journal Publications}
 \begin{enumerate}
     \item \bibentry{PGET20200706}
     \item \bibentry{fang2019positron}
     \item \bibentry{rebei2020quantitative}
 \end{enumerate}
 
-\hspace{1.5em}\textbf{Conference Proceedings}
+\hspace{1.5em}\textbf{Proceedings at International Conferences}
 \begin{enumerate}
 % \setcounter{enumi}{0}
-    \item \bibentry{fang2019timing}
-    \item \bibentry{fanginmm2020}
     \item \bibentry{MingIEEENSS2020}
+    \item \bibentry{fanginmm2020}
+    \item \bibentry{fang2019timing}
 \end{enumerate}
 
 %-----CONFERENCES AND PRESENTATIONS--------------------------------------------
@@ -321,7 +322,7 @@ use item list as is shown in the work experience section.
 Again the title should have already been enough, but if it is necessary to add
 descriptions maintain the consistency from prior sections
 \end{comment}
-\section{Presentations}
+\section{Presentations at International Conferences}
     \begin{enumerate}
         \item \bibentry{2019IEEENSSMIC}
         \item \bibentry{2020INMM}
@@ -346,11 +347,18 @@ Remember to tailor the resume for to the position.
 \section{Teaching and Mentoring}
 \CVSubHeadingListStart
     \CVSubheading
+      {Outreach Activities}{Mar 2020}
+      {UIUC}{Urbana, USA}
+      \CVItemListStart
+        \CVItem{Host a Q\&A session on our research for students in Academic Redshirt in Science and Engineering (ARISE).}
+      \CVItemListEnd
+    \CVSubheading
       {Mentor}{Sept 2018 – Aug 2020}
       {UIUC}{Urbana, USA}
       \CVItemListStart
-        \CVItem{Muzammil Siddiqui, Undergraduate, UIUC.}
-        \CVItem{Noah Rebei, High school student, University Laboratory High School}
+        \CVItem{Satwik Pani, Undergraduate student.}
+        \CVItem{Muzammil Siddiqui, Undergraduate student.}
+        \CVItem{Noah Rebei, High school student, University Laboratory High School.}
       \CVItemListEnd
     \CVSubheading
       {Undergraduate Teaching Assistant}{Sept 2017 – Jan 2018}
@@ -368,26 +376,66 @@ recommends.
 
 \section{Skills}
  \begin{itemize}[leftmargin=0.5cm, label={}]
-    \small{\item{
+    {\item{
      \textbf{Programming}{: C/C++, Python (NumPy, SciPy, Matplotlib), Bash} \\
      \textbf{Document Creation}{: \LaTeX, Markdown, Microsoft Office Suite} \\
-     \textbf{Software}{: MCNP, MATLAB, Mathematica, ROOT, Git, CMake, Make, SOLIDWORKS, Origin, Vivado}\\
+     \textbf{Software}{: MCNP, MATLAB, Mathematica, ROOT, Git, CMake, Make, SOLIDWORKS, OrCAD Capture and PCB Editor, Origin, Vivado}\\
     }}
  \end{itemize}
 
 
 %-----HONORS AND AWARDS--------------------------------------------------------
 \section{Honors and Awards}
+% \begin{itemize}[leftmargin=0.5cm, label={}]
+%     \small{\item{
+%     %  Fellow of Exotic Beam Summer School \hfill Jun 2019 \\
+%     %   {Oak Ridge National Laboratory} \hfill { } \\
+%      {Outstanding Teaching Assistant} \hfill Mar 2018\\
+%      {Outstanding Student Scholarship} \hfill 2017\\
+%      {Institute of Modern Physics, Chinese Academy of Sciences Scholarship} \hfill {2017}\\
+%      {Outstanding Student Scholarship} \hfill 2016\\
+%      {Institute of Modern Physics, Chinese Academy of Sciences Scholarship} \hfill {2015}\\
+%      {Outstanding Freshman Scholarship} \hfill 2014
+%     }}
+%  \end{itemize}
+\CVSubHeadingListStart
+    \CVSubheading
+          {Fellow of Exotic Beam Summer School}{Jun 2019}
+          {Oak Ridge National Laboratory}{}
+    \CVSubheading
+          {Outstanding Teaching Assistant}{Mar 2018}
+          {USTC}{}
+    \CVSubheading
+          {Outstanding Student Scholarship}{May 2017}
+          {USTC}{}
+    \CVSubheading
+          {Institute of Modern Physics, Chinese Academy of Sciences Scholarship}{Sept. 2017}
+          {USTC}{}
+    \CVSubheading
+          {Outstanding Student Scholarship}{May 2016}
+          {USTC}{}
+    \CVSubheading
+          {Institute of Modern Physics, Chinese Academy of Sciences Scholarship}{Sept. 2015}
+          {USTC}{}
+    \CVSubheading
+          {Outstanding Freshman Scholarship}{Sept. 2014}
+          {USTC}{}
+\CVSubHeadingListEnd
 
-\begin{itemize}[leftmargin=0.5cm, label={}]
-    \small{\item{
-     {Outstanding Teaching Assistant} \hfill Mar 2018\\
-     {Outstanding Student Scholarship} \hfill 2017\\
-     {Institute of Modern Physics, Chinese Academy of Sciences Scholarship} \hfill {2017}\\
-     {Outstanding Student Scholarship} \hfill 2016\\
-     {Institute of Modern Physics, Chinese Academy of Sciences Scholarship} \hfill {2015}\\
-     {Outstanding Freshman Scholarship} \hfill 2014
-    }}
- \end{itemize}
-%------------------------------------------------------------------------------
+\section{Professional Societies}
+\begin{itemize}
+    \item Student member of Institute of Nuclear Materials Management
+\end{itemize}
+% %------------------------------------------------------------------------------
+% %% TODO and accomplished
+% \begin{itemize}[leftmargin=0.5cm, label={}]
+%     \small{\item{
+%      {Outstanding Teaching Assistant} \hfill Mar 2018\\
+%      {Outstanding Student Scholarship} \hfill 2017\\
+%      {Institute of Modern Physics, Chinese Academy of Sciences Scholarship} \hfill {2017}\\
+%      {Outstanding Student Scholarship} \hfill 2016\\
+%      {Institute of Modern Physics, Chinese Academy of Sciences Scholarship} \hfill {2015}\\
+%      {Outstanding Freshman Scholarship} \hfill 2014
+%     }}
+%  \end{itemize}
 \end{document}
