@@ -63,19 +63,19 @@ strokes, sans-serif fonts are sans (without) these strokes.
 
 %-----PAGE SETUP---------------------------------------------------------------
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-1cm}
-\addtolength{\evensidemargin}{-1cm}
-\addtolength{\textwidth}{2cm}
-\addtolength{\topmargin}{-1cm}
-\addtolength{\textheight}{2cm}
+% % Adjust margins
+% \addtolength{\oddsidemargin}{-1cm}
+% \addtolength{\evensidemargin}{-1cm}
+% \addtolength{\textwidth}{2cm}
+% \addtolength{\topmargin}{-1cm}
+% \addtolength{\textheight}{2cm}
 
 % Margins for US Letter size
-%\addtolength{\oddsidemargin}{-0.5in}
-%\addtolength{\evensidemargin}{-0.5in}
-%\addtolength{\textwidth}{1in}
-%\addtolength{\topmargin}{-.5in}
-%\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -129,6 +129,7 @@ strokes, sans-serif fonts are sans (without) these strokes.
 \begin{document}
 \nobibliography{publications}
 \bibliographystyle{unsrt}
+% \bibliographystyle{abbrv}
 %-----HEADING------------------------------------------------------------------
 \begin{comment}
 In Europe it is common to include a picture of ones self in the CV. Select
@@ -231,8 +232,10 @@ use item list as is shown in the work experience section.
 \end{comment}
 \section{Research Interest}
   \CVItemListStart
-    \CVItem{{Development of non-destructive assay methods of special material for the characterization of tri-structural isotropic particle (TRISO) fuel for pebble bed reactors and use of advanced techniques, such as positron lifetime spectroscopy, and development of single-volume scatter camera with SiPM scintillator readout}}
+    \CVItem{Development of non-destructive assay methods of special material for the characterization of tri-structural isotropic particle (TRISO) fuel for pebble bed reactors.}
+    \CVItem{Development of single-volume scatter camera with SiPM scintillator readout.}
     \CVItem{Radiation detector signal processing algorithms with a focus on accelerated Monte Carlo implementation and iterative linear inverse solver for image reconstruction.}
+    \CVItem{Application of advanced radiation detection techniques, such as positron lifetime spectroscopy.}
   \CVItemListEnd
 \section{Research Experience}
   \CVSubHeadingListStart
@@ -307,9 +310,11 @@ use item list as is shown in the work experience section.
 
 \hspace{1.5em}\textbf{Peer-Reviewed Journal Publications}
 \begin{enumerate}
-    \item \bibentry{fang2021active}
+    % \item \bibentry{fang2021active}
     \item \bibentry{PGET20200706}
     \item \bibentry{fang2019positron}
+    \item \bibentry{eldaly2021bayesian}
+    \item \bibentry{liu2021neutron}
     \item \bibentry{weiss2021effect}
     \item \bibentry{rebei2020quantitative}
 \end{enumerate}
