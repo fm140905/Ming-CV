@@ -9,8 +9,8 @@
 
 Repository for my CV on Overleaf.
 
-![](Ming_CV/Ming_CV-1.jpg)
-![](Ming_CV/Ming_CV-2.jpg)
-![](Ming_CV/Ming_CV-3.jpg)
-![](Ming_CV/Ming_CV-4.jpg)
-![](Ming_CV/Ming_CV-5.jpg)
+![](Ming_CV/Ming_CV-1.png)
+![](Ming_CV/Ming_CV-2.png)
+![](Ming_CV/Ming_CV-3.png)
+![](Ming_CV/Ming_CV-4.png)
+![](Ming_CV/Ming_CV-5.png)
