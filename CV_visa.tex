@@ -173,12 +173,13 @@ which heading appropriate for the document you are creating.
 % Without picture
 \begin{center}
     \textbf{\Huge Ming Fang} \\ \vspace{1pt} %\scshape sets small capital letters, remove if desired
-    \small 
+    % \small 
     +86 13696531002 $|$
     +1 217-305-1769 $|$
-    \href{mailto:mingf2@illinois.edu}{{mingf2@illinois.edu}}
+    \href{mailto:mingf2@illinois.edu}{{mingf2@illinois.edu}}\\
+    {Gender: Male $|$ Date of Birth: Feb 28, 1997}\\
     % {US ADD: 1615 Melrose Park Ct, Apt 2022, Urbana, IL 61801, USA}\\ \vspace{1pt}
-    % {Foreign ADD: 9 Wazaoji Road, Yaoxitang Village, Mohuan Township, Longyou County, Quzhou, Zhejiang, China 324400}
+    {Address: 9 Wazaoji Road, Yaoxitang Village, Mohuan Township, Longyou County, Quzhou, Zhejiang, China 324400}
     % % % Be sure to use a professional *personal* email address
     % \href{www.linkedin.com/in/ming-fang1}{\underline{linkedin.com/in/ming-fang1}} $|$
     % % you should adjust you linked in profile name to be professional and recognizable
@@ -232,30 +233,51 @@ use item list as is shown in the work experience section.
 
 \section{Work Experience}
 \CVSubHeadingListStart
+     \CVSubheading %Example
+      {Postdoctoral Research Associate}{Jan. 2024 – Present}
+     {University of Illinois Urbana-Champaign}{Urbana, IL, USA}
+    \CVItemListStart
+        \CVItem{\textbf{Main responsibilities:}  Conduct experiments, organize or analyze data, present findings in a publication}
+        \CVItem{\textbf{Main projects and accomplishments:}}
+        \begin{enumerate}[leftmargin=0.5cm, nolistsep]
+            \item \begin{tabular*}{0.90\textwidth}[t]{l@{\extracolsep{\fill}}r}{Innovated Cover-crop Opportunity, Verification, and Economy stimulating technology\\ for underserved farmers using Robotics} & \small{Jan. 2024 -- Present}\end{tabular*}
+            \begin{enumerate}[leftmargin=1.0cm, nolistsep, label=(\roman*)]
+                \item Developed an experimental setup to irradiate soil samples with neutron beams
+                \item Measured the carbon weight fraction in soil by detecting gamma-rays from neutron-carbon interactions
+            \end{enumerate}
+        \end{enumerate}
+      \CVItemListEnd
 %    \CVSubheading % Example
 %      {Degree Achieved}{Years of Study}
 %      {Institution of Study}{Where it is located}
+    \CVSubheading %Example
+      {Graduate Teaching Assistant}{Aug. 2023 – Dec. 2023}
+     {University of Illinois Urbana-Champaign}{Urbana, IL, USA}
+    \CVItemListStart
+        % \CVItem{Cumulative GPA:  4.0 / 4.0}
+        \CVItem{\textbf{Main responsibilities:} Organize laboratory classes and host office hours.}
+        \CVItem{\textbf{Main projects and accomplishments:} None}
+      \CVItemListEnd
+      
     \CVSubheading
-     {Graduate Research Assistant}{Sept. 2018 -- Present}
+     {Graduate Research Assistant}{Sept. 2018 -- Dec. 2023}
      {University of Illinois Urbana-Champaign}{Urbana, IL, USA}
       \CVItemListStart
         % \CVItem{Cumulative GPA:  4.0 / 4.0}
-        \CVItem{\textbf{Main responsibilities:} Conduct experiments, organize or analyze data, present findings in a publication or dissertation.}
+        \CVItem{\textbf{Main responsibilities:} Conduct experiments, organize or analyze data, present findings in a publication or dissertation}
         \CVItem{\textbf{Main projects and accomplishments:}}
         \begin{enumerate}[leftmargin=0.5cm, nolistsep]
-            \item \begin{tabular*}{0.90\textwidth}[t]{l@{\extracolsep{\fill}}r}{Multi-Mode Imaging for TRi-structual ISOtropic (TRISO) Fuel Pebble Identification} & \small{Aug. 2020 -- Present}\end{tabular*}
+            \item \begin{tabular*}{0.90\textwidth}[t]{l@{\extracolsep{\fill}}r}{Multi-Mode Imaging for TRi-structual ISOtropic (TRISO) Fuel Pebble Identification} & \small{Aug. 2020 -- Dec. 2023}\end{tabular*}
             \begin{enumerate}[leftmargin=1.0cm, nolistsep, label=(\roman*)]
-            \item Designed a boron-coated straw-based neutron multiplicity counter to perform non-destruction assay of TRISO-fueled pebbles.
-            \item Developed a fuel pebble identification algorithm based on X-ray Computed Tomography scans of TRISO-fueled pebble.
+                \item Developed an algorithm to identify fuel pebbles based on X-ray Computed Tomography
             \end{enumerate}
             \item \begin{tabular*}{0.90\textwidth}[t]{l@{\extracolsep{\fill}}r}{Quantitative Image Reconstruction in Passive Gamma Emission Tomography} & \small{Aug. 2019 -- Sept. 2020}\end{tabular*}
             \begin{enumerate}[leftmargin=1.0cm, nolistsep, label=(\roman*)]
-            \item Developed an algorithm to reconstruct cross-sectional images of spent nuclear fuel assemblies stored in water pools, identify missing fuel pins, and estimate fuel pin activities
+                \item Developed an algorithm to reconstruct cross-sectional images of spent nuclear fuel assemblies stored in water pools, identify missing fuel pins, and estimate fuel pin activities
             \end{enumerate}
             \item \begin{tabular*}{0.90\textwidth}[t]{l@{\extracolsep{\fill}}r}{Positron Annihilation Lifetime Spectroscopy (PALS)} & \small{Sept. 2018 -- May. 2019}\end{tabular*}
             \begin{enumerate}[leftmargin=1.0cm, nolistsep, label=(\roman*)]
-            \item {Developed and optimized a PALS experimental setup using organic scintillators and fast digitizers.}
-            \item {Measured the positron lifetime in quartz samples.}
+                \item {Developed and optimized an experimental setup to measure the positron lifetime in quartz samples}
             \end{enumerate}
         \end{enumerate}
       \CVItemListEnd
@@ -335,7 +357,7 @@ use item list as is shown in the work experience section.
 %      {Degree Achieved}{Years of Study}
 %      {Institution of Study}{Where it is located}
     \CVSubheading
-      {{PhD Candidate $|$ \emph{\small{Nuclear, Plasma, and Radiological Engineering}}}}{Jan. 2020 -- Present}
+      {{Doctor of Philosophy $|$ \emph{\small{Nuclear, Plasma, and Radiological Engineering}}}}{Jan. 2020 -- Jan. 2024}
       {University of Illinois Urbana-Champaign}{Urbana, IL, USA}
       \CVItemListStart
         % \CVItem{Cumulative GPA:  4.0 / 4.0}
@@ -344,6 +366,8 @@ use item list as is shown in the work experience section.
             \item Multi-Mode Imaging for TRi-structual ISOtropic (TRISO) Fuel Pebble Identification, with publication:
             \begin{enumerate}[leftmargin=1.0cm, nolistsep, label=(\roman*)]
             \item \bibentry{bcs2022}
+            \item \bibentry{bcs2023}
+            \item \bibentry{pebble_ide_2023}
             \end{enumerate}
             \item Quantitative Image Reconstruction in Passive Gamma Emission Tomography, with publications:
             \begin{enumerate}[leftmargin=1.0cm, nolistsep, label=(\roman*)]
@@ -364,7 +388,11 @@ use item list as is shown in the work experience section.
             \item Required: None
             \item Elective: Parallel Programming; Statistical Learning Theory; Scientific Visualization; Python Standard Library
         \end{enumerate}
-        \CVItem{\textbf{Honors or awards:} J.D. Williams Student Paper Award for presentation at the Institute of Nuclear Materials Management 63\textsuperscript{rd} Annual Meeting in July 2022.}
+        \CVItem{\textbf{Honors or awards:}}
+        \begin{enumerate}[leftmargin=1.0cm, nolistsep, label=(\roman*)]
+            \item J.D. Williams Student Paper Award for presentation at the Institute of Nuclear Materials Management 63\textsuperscript{rd} Annual Meeting in July 2022.
+            \item 2024 Glenn F. Knoll Graduate Educational Grant by IEEE Nuclear and Plasma Sciences Society for outstanding performance as a graduate student
+        \end{enumerate}
       \CVItemListEnd
     \CVSubheading
       {{Master of Science $|$ \emph{\small{Nuclear, Plasma, and Radiological Engineering}}}}{Aug. 2018 -- Dec. 2019}
@@ -420,27 +448,40 @@ use item list as is shown in the work experience section.
 \begin{enumerate}
     % \item \bibentry{fang2021active}
     % \item \bibentry{bcs2023}. This paper demonstrated in simulation the ability of a new neutron detector to measure fuel mass in spent nuclear fuel, applicable to next-generation advanced nuclear reactors.
+    \item \bibentry{gmvae_psd_2023}
+
+    This paper introduces a machine-learning-based method for classifying detector pulses from different types of radiations with high accuracy and minimal human supervision.
+    \item \bibentry{leland2024enabling}
+
+    This paper introduces a fast method for classifying detector pulses from different types of radiations as an alternative to the current computationally expensive method.  
+    \item \bibentry{pebble_ide_2023}
+    
+    This paper introduces a computational algorithm to identify circulating fuel elements based on their X-ray CT scans to address the challenge of monitoring fuel status in advanced nuclear reactors.
     \item \bibentry{bcs2022}. 
     
-    This paper introduces a new neutron detector for measuring fuel mass in nuclear fuel with high precision in a short time, which can be used to monitor fuel properties in next-generation advanced nuclear reactors.
+    This paper introduces a neutron detector for measuring fuel mass with high precision in a short time, which can be used to monitor fuel properties in advanced nuclear reactors.
+    
+    \item \bibentry{bcs2023}
+    
+    This paper is an extension of publication 4. It presents a simulation study where the same neutron detector is employed to measure fuel mass in used fuels.
     \item \bibentry{PGET20200706}. 
     
     This paper presents an algorithm to reconstruct two-dimensional images of spent nuclear fuel assemblies stored in water pools and verify the presence of fuel rods based on the reconstructed image.
     \item \bibentry{eldaly2021bayesian}. 
     
-    This paper is an extension of publication 2, where the algorithm is improved to be able to estimate the uncertainty associated with the reconstructed image.
+    This paper is an extension of publication 6, where the algorithm is improved to be able to estimate the uncertainty associated with the reconstructed image.
     \item \bibentry{liu2021neutron}. 
     
     This paper presents a machine-learning-based approach to image spent fuel assemblies stored in dry storage casks and verify their presence.
     \item \bibentry{weiss2021effect}. 
     
-    This paper demonstrates the ability of an advanced algorithm to identify signatures of particular radioactive nuclides among various background radiations, with potential application to detection of illicit sources such as at borders.
+    This paper proposes an advanced algorithm to identify signatures of particular radioactive nuclides among various background radiations, with potential application to detection of illicit sources such as at borders.
     \item \bibentry{rebei2020quantitative}. 
     
     This paper proposes an automated approach to quantify the amount of radioactive materials deposited on invisible surfaces and pipes in nuclear facilities. 
     \item \bibentry{fang2019positron}. 
     
-    This paper proposes a simplified positron annihilation lifetime measurement setup based on modern digitizers, with time resolution comparable to traditional setups.
+    This paper proposes a simplified setup to measure positron annihilation lifetime for material characterization, with time resolution comparable to traditional setups.
 \end{enumerate}
 \hspace{1.5em}\textbf{Patents} -- None
 
