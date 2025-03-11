@@ -79,8 +79,11 @@ strokes, sans-serif fonts are sans (without) these strokes.
 
 \urlstyle{same}
 
-\raggedbottom
-\raggedright
+% \raggedbottom
+% \raggedright
+\usepackage{ragged2e}
+\justifying
+
 \setlength{\tabcolsep}{0cm}
 
 % Sections formatting
@@ -101,8 +104,8 @@ strokes, sans-serif fonts are sans (without) these strokes.
 \newcommand{\CVSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \small#3 & \small #4 \\
+      \textbf{#1} & \footnotesize #2 \\
+      \footnotesize #3 & \footnotesize #4 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -120,7 +123,7 @@ strokes, sans-serif fonts are sans (without) these strokes.
 \newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
 % \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} % Uncomment for US
 \newcommand{\CVSubHeadingListEnd}{\end{itemize}}
-\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}[rightmargin=\dimexpr\linewidth-15cm-\leftmargin\relax]}
 \newcommand{\CVItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %------------------------------------------------------------------------------
@@ -220,7 +223,7 @@ information though). Whatever order you choose be consistent throughout.
       \CVItemListEnd
     \CVSubheading
       {{Master of Science $|$ \emph{\small{Nuclear, Plasma, and Radiological Engineering}}}}{Aug 2018 -- Dec 2019}
-      {University of Illinois Urbana-Champaign (UIUC)}{Urbana, USA}
+      {UIUC}{Urbana, USA}
        \CVItemListStart
         \CVItem{Cumulative GPA:  4.0 / 4.0}
       \CVItemListEnd
@@ -229,6 +232,39 @@ information though). Whatever order you choose be consistent throughout.
       {University of Science and Technology of China (USTC)}{Hefei, China}
        \CVItemListStart
         \CVItem{Cumulative GPA:  3.89 / 4.3}
+      \CVItemListEnd
+  \CVSubHeadingListEnd
+
+% % work
+
+\section{Work Experience}
+  \CVSubHeadingListStart
+%    \CVSubheading % Example
+%      {Title}{Duration}
+%      {Institution}{Where it is located}
+    \CVSubheading
+      {{Research Scientist$|$ \emph{\small{Department of Nuclear, Plasma, and Radiological Engineering (NPRE)}}}}{Nov 2024 -- Present}
+      {UIUC}{Urbana, USA}
+      \CVItemListStart
+        \CVItem{Support the efforts of the Nuclear Measurement Laboratory (NML); assist the NML director and affiliates with research, development, and demonstration activities across the following areas: development of neutron multiplicity counting for safeguarding advanced fuel cycles, modeling and simulation, radiation detector development, and testing.}
+      \CVItemListEnd
+    \CVSubheading
+      {{Postdoctoral Research Associate $|$ \emph{\small{Department of NPRE}}}}{Jan 2024 -- Oct 2024}
+      {UIUC}{Urbana, USA}
+      \CVItemListStart
+        \CVItem{Support the efforts of the Nuclear Measurement Laboratory (NML); assist the NML director and affiliates with research, development, and demonstration activities across the following areas: development of neutron multiplicity counting for safeguarding advanced fuel cycles, modeling and simulation, radiation detector development, and testing.}
+      \CVItemListEnd
+    \CVSubheading
+      {{Graduate Teaching Assistant $|$ \emph{\small{Department of NPRE}}}}{Aug 2023 -- Dec 2023}
+      {UIUC}{Urbana, USA}
+      \CVItemListStart
+        \CVItem{Organize laboratory classes for NPRE 452, grade student lab reports, host office hours.}
+      \CVItemListEnd
+    \CVSubheading
+      {{Graduate Research Assistant $|$ \emph{\small{Department of NPRE}}}}{Sept 2018 -- Aug 2023}
+      {UIUC}{Urbana, USA}
+      \CVItemListStart
+        \CVItem{Conduct experiments, analyze data, present findings in a publication or dissertation.}
       \CVItemListEnd
   \CVSubHeadingListEnd
 
@@ -243,7 +279,8 @@ like you should explain more about why the project is applicable to this job,
 use item list as is shown in the work experience section.
 \end{comment}
 
-\section{Research Experience and Employment}
+
+\section{Research Experience}
   \CVSubHeadingListStart
 %    \CVSubheading %Example
 %      {What you did}{When you worked there}
@@ -287,7 +324,7 @@ use item list as is shown in the work experience section.
       {Active Interrogation Using a DD Neutron Generator}{May 2019 -- May 2020}
       {Graduate Research Assistant, Advisor: Prof. Angela Di Fulvio, UIUC}{Urbana, USA}
       \CVItemListStart
-        \CVItem{Implemented a shift-register algorithm in python to calculate the coincidence neutron count rate.}
+        \CVItem{Implemented a shift-register algorithm in python to calculate the coincidence count rate.}
         \CVItem{Demonstrated the possibility of using a DD generator as a neutron active interrogation source based on the strong correlation between the time-dependent neutron count rate signature and uranium mass.}
       \CVItemListEnd
     \CVSubheading
@@ -321,6 +358,8 @@ use item list as is shown in the work experience section.
 \hspace{1.5em}\textbf{Peer-Reviewed Journal Publications}
 \begin{enumerate}
     % \item \bibentry{fang2021active}
+    \item\bibentry{PGET20250214}
+    \item \bibentry{cecilia2024}
     \item \bibentry{leland2024enabling}
     \item \bibentry{pebble_ide_2023}
     \item \bibentry{gmvae_psd_2023}
@@ -334,9 +373,11 @@ use item list as is shown in the work experience section.
     \item \bibentry{fang2019positron}
 \end{enumerate}
 
-\hspace{1.5em}\textbf{Proceedings at International Conferences}
+\textbf{Proceedings at International Conferences}
 \begin{enumerate}
 % \setcounter{enumi}{0}
+    \item \bibentry{MingPGETNSSMIC2024}
+    \item \bibentry{JohnFPGANSSMIC2024}
     \item \bibentry{MingTRISOANS2023}
     \item \bibentry{MingNMCINMM2023}
     \item \bibentry{KholodieeeMIC2023}
@@ -363,6 +404,7 @@ descriptions maintain the consistency from prior sections
 \end{comment}
 \section{Presentations at International Conferences}
     \begin{enumerate}
+        \item \bibentry{2024IEEENSSMIC}
         \item \bibentry{SIAMIS2024}
         \item \bibentry{NMCINMM2023}
         \item \bibentry{2022IEEENSSMIC}
@@ -374,7 +416,12 @@ descriptions maintain the consistency from prior sections
         \item \bibentry{2020INMM}
         \item \bibentry{2019IEEENSSMIC}
     \end{enumerate}
- 
+
+\section{Invited Talks}
+\begin{enumerate}
+    \item \bibentry{2024CTWorkshop}
+\end{enumerate}
+
 %-----TEACHING EXPERIENCE------------------------------------------------------
 \begin{comment}
 Section is here as it applied to my application for positions in academia. 
@@ -399,7 +446,7 @@ Remember to tailor the resume for to the position.
       \CVItem{Course: NPRE 451 NPRE Laboratory, Spring 2024. Co-teach with Prof. Di Fulvio.}
     \CVItemListEnd
     \CVSubheading
-      {Graduate Teaching Assistant}{Sept. 2023 – Dec. 2023}
+      {Graduate Teaching Assistant}{Aug. 2023 – Dec. 2023}
       {UIUC}{Urbana, USA}
       \CVItemListStart
         \CVItem{Course: NPRE452 Advanced Radiological Laboratory, Fall 2023}
@@ -459,6 +506,8 @@ recommends.
     \CVSubheading
           {IEEE NPSS Glenn F. Knoll Graduate Educational Grant}{April 2024}
           {IEEE Nuclear and Plasma Sciences Society (NPSS)}{}
+
+    \textit{``For outstanding graduate student in the field of nuclear science instrumentation, medical instrumentation, or instrumentation for security applications.''}
     \CVSubheading
           {J.D. Williams Student Paper Award, Second Place}{July 2022}
           {Institute of Nuclear Materials Management 63rd Annual Meeting}{}
@@ -490,10 +539,10 @@ recommends.
 
 \section{Professional Societies}
 \begin{itemize}
-    \item Student member of Institute of Electrical and Electronics Engineers (IEEE)
-    \item Student member of IEEE Nuclear and Plasma Sciences Society
+    \item Member of Institute of Electrical and Electronics Engineers (IEEE)
+    \item Member of IEEE Nuclear and Plasma Sciences Society
+    \item Member of Institute of Nuclear Materials Management
     \item Secretary, Institute of Nuclear Materials Management UIUC Student Chapter
-    \item Student member of Institute of Nuclear Materials Management
     \item Student member of American Nuclear Society
 \end{itemize}
 \end{document}
