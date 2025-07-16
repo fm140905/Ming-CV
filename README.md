@@ -14,4 +14,4 @@ Repository for my CV on Overleaf. To use the same template for your CV, download
 ![](Ming_CV/Ming_CV_Page_3.png)
 ![](Ming_CV/Ming_CV_Page_4.png)
 ![](Ming_CV/Ming_CV_Page_5.png)
-![](Ming_CV/Ming_CV_Page_6.png)
+<!-- ![](Ming_CV/Ming_CV_Page_6.png) -->
